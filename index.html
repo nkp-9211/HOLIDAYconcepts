@@ -24,7 +24,7 @@
     
   }
  .container{
-  display:flex;
+   display:flex;
    justify-content:center;
 
 }
@@ -32,22 +32,40 @@
  
 .item {
   
-  padding: 20px;
-  margin:10px;
-  flex:1;
-  background-color:#f0faff;
+    padding: 20px;
+    margin:10px;
+    flex:1;
+    background-color:#f0faff;
     border-radius :20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.7);
     calc(100vh-40px);
-  
+    font-family:cursive;
+    text-align:center;
+    justify-content:center;
  }
+  
+
 
  table ,th ,td{
-  border: 8px solid black;
-  border-collapse:collapse;
+  border: none;
+  //border-collapse:collapse;
+  Padding:10px;
+
+  
+  margin:5px;
  }
+
+ table{
+      border-radius :20px;
+      background-color:none;
+   }
+
+
  th td {
-  padding:10px;}
+  padding:10px;
+  
+}
+
 td{
    font-weight:25px;
   }
@@ -56,10 +74,51 @@ td{
     border-radius :20px;
     box-shadow:0 4px 12px rgba(0,0,0,0.3);
     calc(100vh-40px);
- padding:40px;margin:10px; }
-  li {font-family:cursive;
-     font-weight:30px;}
+    padding:40px;margin:10px; }
+
+  li {
+    font-family:cursive;
+    font-weight:30px;}
+
+
+
+ .form-container{
+   display:flex;
+   flex-direction:column;
+   backgound-color:rgba(0,255,0,0.5);
+   border:none;
+   border-radius:20px;
+   gap:15px;
+   max-width:400px;
+   margin:auto;
+   padding:20px;
+  } 
+.form-item-box{
+   display:flex;
+   flex-direction:column;
+   padding:15px;
+   border-radius:10px;
+   box-shadow:2px 2px 8px rgba(0,0,0,0.7);
+   color:red;
+  }
+
+ .box1{
+   background-color:#fffdd0;}
+
+.box2{
+   background-color:#e0ffff;}
+.box3{
+   background-color:#ffe4e1;}
+.box4{
+   background-color:#ccffcc;}
+.box5{
+   background-color:#e6ccff;}
+ .form-item-box label{
+   font-weight:bold;
+   margin-bottom:8px;}
+
 </style>
+
 </head>
   
 <body>
@@ -67,9 +126,11 @@ td{
  <h1 style= "text-align:center;">
    HOTEL 
  </h1>
-
+   <br>
+   <br>
  <h2 style ="text-align:center;color:red; font-family:trebuchet ms">Chandigarh</h2>
-  <ol style ="background:rgba(255,0,0,0.5);" >
+  <br>
+  <ol style ="background:rgba(255,0,0,0.5);" id="chd" >
   <li>hyatt regency</li>
 
   <li>Jw marriot</li>
@@ -92,12 +153,15 @@ td{
 
   
   </ol>
+  
+ <br>
+ <br>
 
  <h2 style= "text-align:center;color:blue;font-family:trebuchet MS;">Zirakpur</h2>
 
+ <br>  
    
-   
-  <ol style="background-color:rgba(0,0,139,0.5)">
+  <ol style="background-color:rgba(0,0,139,0.5)" id="zi">
     <li>park palaza hotel</li>
     <li>welcome in</li>
     <li>Radisson red mohali</li>
@@ -108,18 +172,23 @@ td{
     <li>radisson</li>
   </ol>
 
+<br>
+<br>
+
 <h2 style ="text-align:center; color:green; font-family:trebuchet MS;">Parwanno</h2>
 
- <ol style="background-color:rgba(0,100,0,0.5);">
+<br>
+ <ol style="background-color:rgba(0,100,0,0.5);" id="par">
   <li>the timber trails</li>
   <li>the timber terrace</li>
   <li>the timber heights</li>
   <li>the moksha himalayas spa and resort</li>
  </ol>
-
+<br>
+<br>
 <h2 style = "text-align:center; color:orange;  font-family:trebuchet MS">SHIMLA</h2>
-
- <ol style="background-color:rgba(255,140,0,0.5)">
+<br>
+ <ol style="background-color:rgba(255,140,0,0.5)" id="shi">
   <li>Merina</li>
   <li>Combermere mall</li>
   <li>oberoi wild flower</li>
@@ -132,10 +201,11 @@ td{
   <li>willow bank</li>
   <li>Elysium</li> 
 </ol>
-
+<br>
+<br>
   <h2 style = "text-align:center; color:#FFD700; font-family:trebuchet MS;">Dharamshala</h2>
-
-  <ol style="background-color:rgba(255,215,0,0.5)">
+<br>
+  <ol style="background-color:rgba(255,215,0,0.5)" id="dha">
     <li>storii by ITC hotel amhoa retreat</li>
     <li>Radisson Dharamshala</li>
     <li>Norbu Dharamshala</li>
@@ -148,18 +218,22 @@ td{
     <li>leisure</li>
     <li>amritana</li>
   </ol>
-   <h1 style = "text-align:center; color:darkblue" font-family:cursive>
+<br>
+<br>
+<br>
+   <h1 style = "text-align:center;  color:darkblue; font-family:poppins;">
      RATE CALCULATION
-   
+       
 
-   <div class="container">
+   <div class="container" style ="font-family:cursive;">
   
-    
+ <br>   
         
-     <div class = "item">
-       bar price > 7500 18% gst 
+     <div class = "item" style ="text-align:center;">
+       <p>
+       bar price > 7500 18% Gst 
        <p></p>
-       bar price  < 7500 12% gst
+       bar price < 7500 12% Gst
     </div>
     <div class = "item">
     
@@ -167,7 +241,7 @@ td{
       <tr>
         <th>Hotel</th>
         <th>Discount</th>
-        <th>Hotel</th>
+        <th>Hotel</th> 
         <th>Discount</th>
       </tr>
       <tr>
@@ -180,11 +254,69 @@ td{
     
     
    </div>
-
     
    </div>
 </h1>
+<br><br><br>
+<form class = "form-container">
+
+  <div class ="form-item-box box1">
+   <label for="Chandigarh">Chandigarh:  
+   <input type = "radio" name ="chandigarh"  value="Chandigarh"/>
+  </label>
   </div>
+
+ <div class ="form-item-box box2">
+   <label for="zirakpur">Zirakpur:  
+   <input type = "radio" name ="Zirakpur"  value="Zirakpur"/>
+  </label>
+ </div>
+
+ <div class ="form-item-box box3">
+   <label for="Parwaano">Parwanno:  
+   <input type = "radio" name ="Parwanno"  value="Parwanno"/>
+  </label>
+  </div>
+
+ <div class ="form-item-box box4">
+   <label for="Shimla">Shimla:  
+   <input type = "radio" name ="Shimla"  value="Shimla"/>
+  </label>
+  </div>
+
+<div class ="form-item-box box5">
+   <label for="Dharamshala">Dharamshala:  
+   <input type = "radio" name ="Dharamshala"  value="Dharamshala"/>
+  </label>
+  </div>
+  
+</form>
+</form>
+   
+  </div>
+
+
+
+
+<script>
+    
+  const c = document.querySelectorAll("#chd");
+  const chdArray = Array.from(c).map(item => item.textContent);
+
+  const z = document.querySelectorAll("#zi");
+  const ziArray = Array.from(z).map(item => item.textContent);
+  
+  const p = document.querySelectorAll("#par");
+  const parArray = Array.from(p).map(item3 => item3.textContent);
+  
+  const s = document.querySelectorAll("#shi");
+  const shiArray = Array.from(s).map(item4 => item4.textContent);
+
+  const d = document.querySelectorAll("#dha");
+  const dhaArray = Array.from(d).map(item5 => item5.textContent);
+    
+ 
+</script>
   
 </body>
 </html>                                                                                  
