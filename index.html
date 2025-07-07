@@ -97,14 +97,24 @@ td{
 .form-item-box{
    display:flex;
    jutstify-content:space-between;
-  align-items:center'
+   align-items:center;
    padding:15px;
    border-radius:10px;
    box-shadow:2px 2px 8px rgba(0,0,0,0.7);
    color:red;
-  font-weight:bold;
-  font-size:18px
+   font-weight:bold;
+   font-size:18px;
   }
+
+ input[type="radio"]{
+     align-items:center;
+     margin-left:220px;
+     Gap:50px;
+     transform:scale(1.7);
+     
+     
+     
+   }
 
  .box1{
    background-color:#fffdd0;}
@@ -264,33 +274,33 @@ td{
 <br><br><br>
 <form class = "form-container">
 
-  <div class ="form-item-box box1">
-   <label for="Chandigarh">Chandigarh:  
-   <input type = "radio" name ="chandigarh"  value="Chandigarh"/>
+  <div class ="form-item-box box1" style="display:flex; gap:20px;">
+   <label for="Chandigarh">Chandigarh:&nbsp&nbsp&nbsp&nbsp&nbsp       
+   <input type = "radio" name ="city"  id="chandigarh" value="Chandigarh"/>
   </label>
   </div>
 
  <div class ="form-item-box box2">
-   <label for="zirakpur">Zirakpur:  
-   <input type = "radio" name ="Zirakpur"  value="Zirakpur"/>
+ <label for="zirakpur">Zirakpur:&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp    
+   <input type = "radio" name ="city" id="Zirakpur" value="Zirakpur"/>
   </label>
  </div>
 
  <div class ="form-item-box box3">
-   <label for="Parwaano">Parwanno:  
-   <input type = "radio" name ="Parwanno"  value="Parwanno"/>
+   <label for="Parwaano">Parwanno:&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp     
+   <input type = "radio" name ="city"id="Parwanno"  value="Parwanno"/>
   </label>
   </div>
 
  <div class ="form-item-box box4">
-   <label for="Shimla">Shimla:  
-   <input type = "radio" name ="Shimla"  value="Shimla"/>
+   <label for="Shimla">Shimla:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp      
+   <input type = "radio" name ="city" id="Shimla"  value="Shimla"/>
   </label>
   </div>
 
 <div class ="form-item-box box5">
-   <label for="Dharamshala">Dharamshala:  
-   <input type = "radio" name ="Dharamshala"  value="Dharamshala"/>
+   <label for="Dharamshala">Dharamshala:&nbsp&nbsp
+   <input type = "radio" name ="city" id="Dharamshala"  value="Dharamshala"/>
   </label>
   </div>
   
